@@ -1,0 +1,180 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family:localRobotoRegular ;
+    /*background: url(bg.jpg) no-repeat center top;*/
+    height: 100vh;
+}
+#form-registro{
+    width: 300;
+    height: 150;
+    border-radius: 20px;
+    background: #03FFD5    ;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+#form-registro h1{
+
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+#form-registro label{
+
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+#form-registro input{
+
+    width: 100%;
+    margin-bottom: 20px;
+}
+#form-registro input[type="text"]
+#form-registro input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+#form-registro input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:limegreen;
+    color: #000;
+    font-size: 18px;
+    border-radius: 20px;
+}
+#form-registro input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+p{
+
+    text-decoration: none;
+    text-align: right;
+    font-size: 9px;
+    line-height: 20px;
+    color: darkgray;
+}
+header{
+    position: fixed;
+    background-color: rgb(48, 5, 5);
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+
+nav ul {
+    float: right;
+    margin: 7px 15px 0 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+* {
+    font-family: localRobotoRegular;
+}
+* {
+    font-family: localRobotoRegular;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#btn-registrar {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.roboto-light {
+    font-family: localRobotoLight;
+    font-weight: 300;
+}
+
+nav ul li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+nav {
+    direction: rtl;
+}
+
+div {
+    display: block;
+}
+
+div.logo {
+    float:left;
+    color: white;
+}
+
+nav.pages {
+    direction: ltr;
+    background-color: #0a0238;
+    position: relative;
+    padding: 0 20px;
+}
+
+.uiview {
+    padding-top: 50px;
+}
+
+.pages a {
+    display: inline-block;
+    padding: 8px;
+    color: gray;
+    font-size: 16px;
+}
+
+nav.pages * {
+    text-decoration: none;
+}
+
+.pages a:after {
+    content: "/";
+    position: relative;
+    width: 100%;
+    height: 100%;
+    right: -8px;
+    top: 0;
+    z-index: 1;
+}
+
+.pages a:last-child:after {
+    content: "";
+}
+
+a.select {
+    color: #fff;
+} 
