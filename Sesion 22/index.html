@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+    <style>
+        #for{
+            width: 400px;
+            height: 250px;
+            background: #f0d1d1;
+            margin: 0 auto;
+        }
+    </style>
+
+    <script>
+        function validarCaptcha(valor){
+            var caption = document.getElementById('valor').value;
+            if(caption.toLowerCase().trim()=='zagreb'){
+                alert('Correcto');
+                return true;
+            } else {
+                alert('Incorrecto');
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div id="for">
+        <form action="#" method="post" onsubmit="return validarCaptcha(valor)">
+            <center>Formulario Caption</center><hr>
+            <label for="usuario">Usuario</label>
+            <input type="text" name="user" id="user"><br><br>
+            <label for="contrasena">Contraseña</label>
+            <input type="password" name="pass" id="passs"><br><br>
+
+            <p align="center">¿Cuál esla capital de Croacia?<br>
+                <input type="text" name="valor" id="valor"><hr>
+            </p>
+
+            <center><input type="submit" value="Enviar"></center>
+        </form>
+    </div>
+    
+</body>
+</html>
