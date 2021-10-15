@@ -1,0 +1,1 @@
+select *from Usuarios where correo like '%hotmail.com';

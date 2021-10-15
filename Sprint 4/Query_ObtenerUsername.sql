@@ -1,0 +1,1 @@
+select username, correo from Usuarios where username regexp '[0-9]' order by username asc;
