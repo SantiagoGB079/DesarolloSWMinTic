@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <script src="login.js"></script>
+    <title>Inicio de sesión</title>
+</head>
+<body background="bg.jpg" no-repeat center top>
+    <div id="form-registro">
+        <h1>Registro</h1>
+        <form action="">
+            <label for="Username">Username o Correo</label><br>
+            <input type="text" id="username/correo"><br>
+            <label for="Password">Password</label><br>
+            <input type="password" name="Password" id="contrasena"><br>
+            <label for="captcha">CAPTCHA</label>
+            <input type="text" name="CAPTCHA" value="" id="captcha"><br>
+            <br>
+            <input type="submit" value="Iniciar sesión" id="btn-login" onclick="return login(event)">
+        </form>
+    </div>
+</body>
+</html>

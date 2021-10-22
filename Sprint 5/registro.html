@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <script src="form.js"></script>
+    <script src="registro.js"></script>
+    <title>Registro</title>
+</head>
+<body background="bg.jpg" no-repeat center top>
+    <div id="form-registro">
+        <h1>Registro</h1>
+        <form action="login.html">
+            <label for="Username">Username</label><br>
+            <input type="text" id="Username"><br>
+            <label for="Correo">Correo</label><br>
+            <input type="email" id="Correo"><br>
+            <label for="Password">Contraseña</label><br>
+            <input type="password" name="Password" id="Contrasena"><br>
+            <label for="Confirm Password">Confirmar contraseña</label><br>
+            <input type="password" name="Password" id="Confirmar contrasena"><br>
+            <br>
+            <input type="submit" value="Registrar" id="btn-submit-form" onclick="return agregarRegistro(event)">
+        </form>
+    </div>
+</body>
+</html>
