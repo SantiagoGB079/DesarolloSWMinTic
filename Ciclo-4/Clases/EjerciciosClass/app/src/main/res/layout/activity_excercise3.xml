@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityExcercise3">
+
+    <TextView
+        android:id="@+id/txtBalota1"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="132dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBalota4"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:text="0"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtBalota3"
+        app:layout_constraintStart_toEndOf="@+id/txtBalota3" />
+
+    <TextView
+        android:id="@+id/txtBalota2"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:text="0"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtBalota1"
+        app:layout_constraintStart_toEndOf="@+id/txtBalota1" />
+
+    <TextView
+        android:id="@+id/txtBalota3"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtBalota2"
+        app:layout_constraintStart_toEndOf="@+id/txtBalota2" />
+
+    <Button
+        android:id="@+id/idGenerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENERAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBalota3"
+        app:layout_constraintVertical_bias="0.397" />
+</androidx.constraintlayout.widget.ConstraintLayout>
