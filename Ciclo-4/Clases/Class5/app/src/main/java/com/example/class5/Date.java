@@ -36,8 +36,8 @@ public class Date extends AppCompatActivity {
         txtCalculoEdad = findViewById(R.id.idEdad);
         calcular = findViewById(R.id.btnCalcular);
 
-        receive();
-        monitoreo.setText(dataPer[0]+" "+dataPer[1]+" - "+dataPer[2]+" - "+dataPer[3]);
+        //receive();
+        //monitoreo.setText(dataPer[0]+" "+dataPer[1]+" - "+dataPer[2]+" - "+dataPer[3]);
 
         calcular.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,9 @@ public class Date extends AppCompatActivity {
                         mm = month;
                         dd = dayOfMonth;
                         Toast.makeText(Date.this, "Esta es la fecha anio "+aaaa,Toast.LENGTH_LONG).show();
-                        txtCalculoEdad.setText(new StringBuilder().append(date[2]-aaaa));
+                        //int calculo = dataPer[2]-aaaa;
+                        int calculo = 2021-aaaa;
+                        txtCalculoEdad.setText(new StringBuilder().append(calculo));
                     }
                 }, aaaa, mm, dd);
                 datePickerDialog.show();
