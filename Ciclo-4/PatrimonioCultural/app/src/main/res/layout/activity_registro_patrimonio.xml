@@ -7,69 +7,82 @@
     tools:context=".RegistroPatrimonio">
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
-        android:layout_width="363dp"
-        android:layout_height="46dp"
+        android:id="@+id/idTipoPatrimonio"
+        android:layout_width="342dp"
+        android:layout_height="49dp"
         android:ems="10"
+        android:hint="Tipo de patrimonio"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/idUbicacion"
         app:layout_constraintVertical_bias="0.171" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="361dp"
+        android:id="@+id/idNameLugar"
+        android:layout_width="344dp"
         android:layout_height="47dp"
         android:layout_marginTop="100dp"
         android:ems="10"
+        android:hint="Nombre del lugar"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="363dp"
-        android:layout_height="46dp"
+        android:id="@+id/idPalabras"
+        android:layout_width="339dp"
+        android:layout_height="43dp"
         android:layout_marginTop="48dp"
         android:ems="10"
+        android:hint="Palabras clave"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/idNameLugar" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="170dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:id="@+id/idEtiqueta"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginTop="48dp"
         android:ems="10"
+        android:hint="Etiqueta"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/idPalabras" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="182dp"
-        android:layout_height="47dp"
+        android:id="@+id/idUbicacion"
+        android:layout_width="164dp"
+        android:layout_height="46dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"
+        android:hint="Ubicacion"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/idEtiqueta"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.636"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName" />
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toEndOf="@+id/idEtiqueta" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR"
+        app:backgroundTint="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTipoPatrimonio"
+        app:layout_constraintVertical_bias="0.406" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
