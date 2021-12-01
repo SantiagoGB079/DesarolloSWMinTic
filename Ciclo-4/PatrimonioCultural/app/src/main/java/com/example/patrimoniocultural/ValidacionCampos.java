@@ -7,11 +7,39 @@ public class ValidacionCampos {
 
     public boolean formRegistros(String nombreLugar, String tipoPatrimonio, String keyWords,
                                  String keyTag, String ubicacion) {
-        System.out.println("NOMBRE "+nombreLugar);
 
-        Pattern pattern = Pattern.compile("^[a-zA-Z]{3}");
+        Pattern pattern = Pattern.compile("^[a-zA-Z]{3,30}");
         Matcher matcher = pattern.matcher(nombreLugar);
+        Matcher matPat = pattern.matcher(tipoPatrimonio);
+        Matcher matKW = pattern.matcher(keyWords);
+        Matcher matKT = pattern.matcher(keyTag);
+        Matcher matUbicacion = pattern.matcher(ubicacion);
 
+        if (matcher.matches() && matPat.matches() && matKT.matches() && matKW.matches()
+                && matUbicacion.matches()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean formBusqueda(String keyWords) {
+
+        Pattern pattern = Pattern.compile("^([a-zA-Z+,]){3,100}");
+        Matcher matcher = pattern.matcher(keyWords);
+
+        if (matcher.matches()) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    public boolean formEtiqueta(String keyTag) {
+
+        Pattern pattern = Pattern.compile("^[a-zA-Z]{2,100}");
+        Matcher matcher = pattern.matcher(keyTag);
 
         if (matcher.matches()) {
             return true;

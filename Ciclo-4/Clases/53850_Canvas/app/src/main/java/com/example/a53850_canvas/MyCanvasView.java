@@ -24,6 +24,7 @@ public class MyCanvasView extends View {
     private Bitmap nExtrasBitmap;
     private Canvas nExtrasCanvas;
     private Rect nFrame;
+    private Rect nFrame2;
     private float ax;
     private float ay;
 
@@ -56,6 +57,7 @@ public class MyCanvasView extends View {
         nExtrasCanvas.drawColor(aBackgroundColor);
         int inset = 2;
         nFrame = new Rect(inset, inset, w - inset, h - inset);
+
     }
 
     @Override

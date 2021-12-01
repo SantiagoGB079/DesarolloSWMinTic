@@ -29,10 +29,34 @@ public class MainActivity extends AppCompatActivity {
                 initRegistrar();
             }
         });
+
+        buscarEtiqueta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                initBuscarEtiqueta();
+            }
+        });
+
+        buscarPatrimonio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                initBuscarPatrimonio();
+            }
+        });
     }
 
     public void initRegistrar() {
         Intent intent = new Intent(this, RegistroPatrimonio.class);
+        startActivity(intent);
+    }
+
+    public void initBuscarEtiqueta() {
+        Intent intent = new Intent(this, BuscarEtiqueta.class);
+        startActivity(intent);
+    }
+
+    public void initBuscarPatrimonio(){
+        Intent intent = new Intent(this,BuscarPatrimonio.class);
         startActivity(intent);
     }
 }
