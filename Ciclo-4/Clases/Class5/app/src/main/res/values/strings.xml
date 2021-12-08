@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Class5</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="noMessage">Gracias</string>
+    <string name="siMessage">Bienvenido a nuestra app</string>
+    <string name="terminos">TERMINOS DEL SERVICIO</string>
+</resources>

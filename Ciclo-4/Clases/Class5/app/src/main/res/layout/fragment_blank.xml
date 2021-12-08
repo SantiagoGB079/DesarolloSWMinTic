@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BlankFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonNo"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:text="NO" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSi"
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:text="SI" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_uno"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/teal_700"
+            android:text="                    " />
+
+        <TextView
+            android:id="@+id/tv_dos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:text="                    " />
+
+        <TextView
+            android:id="@+id/tv_tres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            android:text="Los diseñadores de esta aplicacion no se hacen responsables del uso indebido que de ella se dé." />
+
+        <Button
+            android:id="@+id/btnTerminos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terminos" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
