@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtPadre"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/app_modo_uno"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtModoUnoUno"
+        android:layout_width="185dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/app_modo_uno_uno"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPadre" />
+
+    <EditText
+        android:id="@+id/txtModoDos"
+        android:layout_width="183dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/app_modo_uno_dos"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtModoUnoUno" />
+
+    <EditText
+        android:id="@+id/txtModoTres"
+        android:layout_width="183dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/app_modo_uno_tres"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtModoDos" />
+
+
+    <EditText
+        android:id="@+id/txtValueUno"
+        android:layout_width="185dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/app_value_uno_uno"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtModoUnoUno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtModoUnoUno" />
+
+    <EditText
+        android:id="@+id/txtValueDos"
+        android:layout_width="183dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/app_value_uno_dos"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtModoDos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtModoDos" />
+
+    <EditText
+        android:id="@+id/txtValueTres"
+        android:layout_width="182dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/app_value_uno_tres"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtModoTres"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:onClick="registrar"
+        android:text="@string/app_reg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtModoTres" />
+
+    <Button
+        android:id="@+id/btnListar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="listar"
+        android:text="@string/app_lis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReg"
+        app:layout_constraintVertical_bias="0.056" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

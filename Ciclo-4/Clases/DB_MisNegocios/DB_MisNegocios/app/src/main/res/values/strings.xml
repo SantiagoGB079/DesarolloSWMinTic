@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DB_MisNegocios</string>
+    <string name="app_reg">REGISTRAR</string>
+    <string name="app_list">LISTAR</string>
+    <string name="app_nodo_uno">Padre</string>
+    <string name="app_nodo_uno_uno">Hijo_uno</string>
+    <string name="app_nodo_uno_dos">Hijo_dos</string>
+    <string name="app_nodo_uno_tres">Hijo_tres</string>
+    <string name="app_val_uno">Hijo_tres</string>
+    <string name="app_val_dos">Hijo_tres</string>
+    <string name="app_val_tres">Hijo_tres</string>
+</resources>

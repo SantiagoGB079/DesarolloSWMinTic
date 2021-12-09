@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MisNegociosBD</string>
+    <string name="app_reg">REGISTRAR</string>
+    <string name="app_lis">LISTAR</string>
+    <string name="app_modo_uno">Padre</string>
+    <string name="app_modo_uno_uno">Hijo_uno</string>
+    <string name="app_modo_uno_dos">Hijo_dos</string>
+    <string name="app_modo_uno_tres">Hijo_tres</string>
+    <string name="app_value_uno_uno">Value_uno</string>
+    <string name="app_value_uno_dos">Value_dos</string>
+    <string name="app_value_uno_tres">Value_tres</string>
+</resources>
