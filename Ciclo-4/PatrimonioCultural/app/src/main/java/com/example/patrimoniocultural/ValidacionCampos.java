@@ -25,7 +25,7 @@ public class ValidacionCampos {
 
     public boolean formBusqueda(String keyWords) {
 
-        Pattern pattern = Pattern.compile("^([a-zA-Z+,]){3,100}");
+        Pattern pattern = Pattern.compile("^([a-zA-Z+,]){2,100}");
         Matcher matcher = pattern.matcher(keyWords);
 
         if (matcher.matches()) {

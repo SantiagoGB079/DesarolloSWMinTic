@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "280751025548",
+    "firebase_url": "https://misnegocios-cd98f-default-rtdb.firebaseio.com",
+    "project_id": "misnegocios-cd98f",
+    "storage_bucket": "misnegocios-cd98f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280751025548:android:ec153a7dd5131af0ebfaa9",
+        "android_client_info": {
+          "package_name": "com.example.db_misnegocios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280751025548-mhahc3fetrklhbufg5fpk6i39dhsdbh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4hNMZnqpg3_wqdf4fsnuJXl4L3i6QbDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280751025548-mhahc3fetrklhbufg5fpk6i39dhsdbh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280751025548:android:47f256ec49a04a0bebfaa9",
+        "android_client_info": {
+          "package_name": "com.example.misnegociosbd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280751025548-mhahc3fetrklhbufg5fpk6i39dhsdbh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4hNMZnqpg3_wqdf4fsnuJXl4L3i6QbDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280751025548-mhahc3fetrklhbufg5fpk6i39dhsdbh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

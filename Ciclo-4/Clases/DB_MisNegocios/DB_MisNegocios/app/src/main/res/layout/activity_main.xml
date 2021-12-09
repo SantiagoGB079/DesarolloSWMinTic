@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Et_val_dos"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/app_val_dos"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Et_nodo_uno_dos"
+        app:layout_constraintStart_toEndOf="@+id/Et_nodo_uno_dos"
+        app:layout_constraintStart_toStartOf="@+id/Et_val_tres" />
+
+    <EditText
+        android:id="@+id/Et_nodo_uno_uno"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/app_nodo_uno_uno"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_nodo_uno" />
+
+    <EditText
+        android:id="@+id/Et_val_uno"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/app_val_uno"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Et_nodo_uno_uno"
+        app:layout_constraintStart_toEndOf="@+id/Et_nodo_uno_uno"
+        app:layout_constraintStart_toStartOf="@+id/Et_val_dos" />
+
+    <EditText
+        android:id="@+id/Et_nodo_uno_dos"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/app_nodo_uno_dos"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_nodo_uno_uno" />
+
+    <EditText
+        android:id="@+id/Et_nodo_uno_tres"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/app_nodo_uno_tres"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_nodo_uno_dos" />
+
+    <EditText
+        android:id="@+id/Et_val_tres"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/app_val_tres"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Et_nodo_uno_tres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toEndOf="@+id/Et_nodo_uno_tres" />
+
+    <Button
+        android:id="@+id/Bt_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:onClick="Registrar"
+        android:text="@string/app_reg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_nodo_uno_tres" />
+
+    <EditText
+        android:id="@+id/Et_nodo_uno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/app_nodo_uno"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Bt_listar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_list"
+        android:onClick="Listar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bt_reg"
+        app:layout_constraintVertical_bias="0.039" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
